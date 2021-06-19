@@ -1,5 +1,4 @@
-import aop.CalcService;
-import javafx.application.Application;
+import cn.com.aop.CalcService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.SpringBootVersion;
@@ -16,9 +15,10 @@ import javax.annotation.Resource;
  * @version v1.0
  * @date 2021/5/23
  */
-@SpringBootTest
+@SpringBootTest(classes = App.class)
 @RunWith(SpringRunner.class)
 public class TestAop {
+
     @Resource
     private CalcService calcService;
 
